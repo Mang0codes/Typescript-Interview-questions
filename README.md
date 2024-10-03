@@ -57,9 +57,9 @@
 
           ```typescript
 
-         `function identity<T>(arg: T): T {
+         function identity<T>(arg: T): T {
           return arg;
-          }`
+          }
 
 13.  **How do you create a custom type in TypeScript?**
 
@@ -67,7 +67,7 @@
 
       ```typescript
 
-      `type Point = { x: number, y: number };`
+      type Point = { x: number, y: number };
 
 14.  **Explain the `any` type in TypeScript.**
 
@@ -78,23 +78,23 @@
 
        ```typescript
         
-       `function error(message: string): never {
+       function error(message: string): never {
          throw new Error(message);
-       }`
+       }
 
 16.  **How can you extend interfaces in TypeScript?**
 
      -   You can use the `extends` keyword to create a new interface that builds on an existing one. This allows you to add or modify properties without repeating the entire structure.
 
-     ```typescript
+       ```typescript
 
-    `interface Animal {
-      name: string;
-    }
+       interface Animal {
+         name: string;
+        }
 
-    interface Dog extends Animal {
-      breed: string;
-    }`
+        interface Dog extends Animal {
+         breed: string;
+        }
 
 17.  **What is `readonly` in TypeScript?**
 
@@ -102,9 +102,9 @@
 
      ```typescript
  
-     `interface Car {
+     interface Car {
       readonly make: string;
-    }`
+      }
 
 18.  **How do you declare a tuple in TypeScript?**
 
@@ -112,8 +112,8 @@
 
      ```typescript
 
-      `let tuple: [string, number];
-       tuple = ["hello", 10];`
+      let tuple: [string, number];
+       tuple = ["hello", 10];
 
 29. **What are decorators in TypeScript?**
 
@@ -125,9 +125,9 @@
 
     ```typescript
 
-    `function greet(name: string = "Guest") {
+    function greet(name: string = "Guest") {
       return `Hello, ${name}`;
-    }`
+     }
 
 21. **How does TypeScript support modules and namespaces?**
 
@@ -135,8 +135,8 @@
 
     ```typescript
 
-    `// file.ts
+    // file.ts
     export const pi = 3.14;
 
     // main.ts
-    import { pi } from './file';`
+    import { pi } from './file';
