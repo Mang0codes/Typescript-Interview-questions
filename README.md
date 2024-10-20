@@ -16,7 +16,7 @@
 
 5. **Explain the concept of "interfaces" in TypeScript.**
    - Interfaces define the shape or structure of an object. They specify what properties and methods an object should have, along with their types, but they do not implement any functionality. This helps ensure consistency across different objects.
-
+ 
 6. **How do you define a union type in TypeScript?**
    - A union type allows a variable to hold one of multiple types. You define it using the pipe (`|`) symbol, like `let value: string | number`. Here, `value` can be either a string or a number.
 
